@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D8EA682F2CDE85BF0049FC65 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = D8EA682E2CDE85BF0049FC65 /* CodeScanner */; };
+		D8EA683C2CDE897E0049FC65 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = D8EA683B2CDE897E0049FC65 /* Localizable.xcstrings */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D8EA68052CDE83FD0049FC65 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,7 @@
 		D8EA67F42CDE83FC0049FC65 /* Enroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Enroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EA68042CDE83FD0049FC65 /* EnrollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnrollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EA680E2CDE83FD0049FC65 /* EnrollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnrollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EA683B2CDE897E0049FC65 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8EA682F2CDE85BF0049FC65 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +82,11 @@
 		D8EA67EB2CDE83FC0049FC65 = {
 			isa = PBXGroup;
 			children = (
+				D8EA683B2CDE897E0049FC65 /* Localizable.xcstrings */,
 				D8EA67F62CDE83FC0049FC65 /* Enroll */,
 				D8EA68072CDE83FD0049FC65 /* EnrollTests */,
 				D8EA68112CDE83FD0049FC65 /* EnrollUITests */,
+				D8EA682D2CDE85BF0049FC65 /* Frameworks */,
 				D8EA67F52CDE83FC0049FC65 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +99,13 @@
 				D8EA680E2CDE83FD0049FC65 /* EnrollUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D8EA682D2CDE85BF0049FC65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +128,7 @@
 			);
 			name = Enroll;
 			packageProductDependencies = (
+				D8EA682E2CDE85BF0049FC65 /* CodeScanner */,
 			);
 			productName = Enroll;
 			productReference = D8EA67F42CDE83FC0049FC65 /* Enroll.app */;
@@ -192,9 +209,13 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-US",
 			);
 			mainGroup = D8EA67EB2CDE83FC0049FC65;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D8EA682C2CDE85AC0049FC65 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D8EA67F52CDE83FC0049FC65 /* Products */;
 			projectDirPath = "";
@@ -212,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8EA683C2CDE897E0049FC65 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,11 +421,13 @@
 				DEVELOPMENT_TEAM = 2BY2NMR4CA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan State DL/ID to check on Voter Registration";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,11 +452,13 @@
 				DEVELOPMENT_TEAM = 2BY2NMR4CA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan State DL/ID to check on Voter Registration";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +584,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8EA682C2CDE85AC0049FC65 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8EA682E2CDE85BF0049FC65 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8EA682C2CDE85AC0049FC65 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D8EA67EC2CDE83FC0049FC65 /* Project object */;
 }

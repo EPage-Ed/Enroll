@@ -1,0 +1,369 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "* Must be 18 by the date of the next election\nVisit the site to verify if eligible,\nor to pre-register to vote if age 16 or 17." : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "* Debe tener 18 años antes de la fecha de la próxima elección.\nVisite el sitio para verificar si es elegible,\no para registrarse previamente para votar si tiene 16 o 17 años."
+          }
+        }
+      }
+    },
+    "❤️ Registered to Vote ❤️" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "❤️ Registrado para Votar ❤️"
+          }
+        }
+      }
+    },
+    "Available in California" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disponible en California"
+          }
+        }
+      }
+    },
+    "Digits" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dígitos"
+          }
+        }
+      }
+    },
+    "Do you want to choose a political party preference?" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Quieres elegir una preferencia de partido político?"
+          }
+        }
+      }
+    },
+    "Enroll" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inscribirse"
+          }
+        }
+      }
+    },
+    "Enter Party Name" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Introduzca el nombre del partido"
+          }
+        }
+      }
+    },
+    "How to Use" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cómo Utilizar"
+          }
+        }
+      }
+    },
+    "I am a U.S. citizen and resident of California." : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soy ciudadano(a) estadounidense y residente de California."
+          }
+        }
+      }
+    },
+    "I have a Social Security Number" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tengo un número de seguro social"
+          }
+        }
+      }
+    },
+    "I want to get my county voter information guide by mail before each election." : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quiero recibir la guía de información para votantes de mi condado por correo antes de cada elección."
+          }
+        }
+      }
+    },
+    "I want to get my state voter information guide by mail before each statewide election." : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quiero recibir mi guía de información para votantes del estado por correo antes de cada elección estatal."
+          }
+        }
+      }
+    },
+    "If you do not choose a party, you may not be able to vote for some parties’ candidates at a primary election for U.S. President, or for a party’s central committee." : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si no elige un partido, es posible que no pueda votar por los candidatos de algunos partidos en una elección primaria para presidente de Estados Unidos o para el comité central de un partido."
+          }
+        }
+      }
+    },
+    "Last 4 digits:" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Últimos 4 dígitos:"
+          }
+        }
+      }
+    },
+    "May Need More Info" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puede que necesite más información"
+          }
+        }
+      }
+    },
+    "More Info" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Más Información"
+          }
+        }
+      }
+    },
+    "Must be 18 to Vote*" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debe tener 18 años para votar*"
+          }
+        }
+      }
+    },
+    "Next Election" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Próxima Elección"
+          }
+        }
+      }
+    },
+    "No Registration Found" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se encontró ningún registro"
+          }
+        }
+      }
+    },
+    "Processing..." : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tratamiento…"
+          }
+        }
+      }
+    },
+    "Register" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Registro"
+          }
+        }
+      }
+    },
+    "Register to Vote" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regístrese para Votar"
+          }
+        }
+      }
+    },
+    "Review the following forms. Most of the required information will be pre-filled.\n Make any changes as desired." : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revise los siguientes formularios. La mayor parte de la información requerida ya estará completa. Realice los cambios que desee."
+          }
+        }
+      }
+    },
+    "Scan back of\nState ID Card" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escanear hacia atrás de\nTarjeta de identificación estatal"
+          }
+        }
+      }
+    },
+    "Scan Card" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escanear Tarjeta"
+          }
+        }
+      }
+    },
+    "See your voter status" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vea su estado de votante"
+          }
+        }
+      }
+    },
+    "Select County" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seleccione el Condado"
+          }
+        }
+      }
+    },
+    "Select Party" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seleccionar Partido"
+          }
+        }
+      }
+    },
+    "Start Over" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empezar de Nuevo"
+          }
+        }
+      }
+    },
+    "Tap Register if needed" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque Registrarse si es necesario"
+          }
+        }
+      }
+    },
+    "Tap Scan Card button" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque el botón Escanear tarjeta"
+          }
+        }
+      }
+    },
+    "Underage" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menor de edad"
+          }
+        }
+      }
+    },
+    "Verify" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verificar"
+          }
+        }
+      }
+    },
+    "Visit Site to Verify" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visite el sitio para verificar"
+          }
+        }
+      }
+    },
+    "Visit Voter Registration Site" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visita el sitio de registro de votantes"
+          }
+        }
+      }
+    },
+    "Voter Registration Info" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Información de registro de votantes"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
