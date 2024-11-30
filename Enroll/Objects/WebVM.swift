@@ -11,9 +11,11 @@ final class SwiftUIWebViewModel: ObservableObject {
   
   var addressStr = "https://voterstatus.sos.ca.gov"
   @Published var status : LicenseStatus = .none // .inactive
-  var electionDate = "November 05, 2024"
-  var electionName = "November 5, 2024, General Election"
-  
+  var electionDate = ""
+  var electionName = ""
+//  var electionDate = "November 05, 2024"
+//  var electionName = "November 5, 2024, General Election"
+
   let webView: WKWebView
   
   init() {
@@ -137,10 +139,30 @@ sleep(6000).then(() => { doSubmitForm(); });
           {
             electionDate = html[html.index(cidx, offsetBy: 4)..<eidx].trimmingCharacters(in: .whitespacesAndNewlines)
             electionName = html[html.index(c2idx, offsetBy: 4)..<e2idx].trimmingCharacters(in: .whitespacesAndNewlines)
+            self.status = .active
+          } else {
+            // url = https://www.sos.ca.gov/elections/upcoming-elections
+            webView.load(URLRequest(url: URL(string: "https://www.sos.ca.gov/elections/upcoming-elections")!))
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+              Task { @MainActor in
+                if let html = (try await self.webView.evaluateJavaScript("document.documentElement.outerHTML.toString()")) as? String {
+                  if let bidx = html.range(of: "Upcoming Statewide Elections")?.upperBound,
+                     let cidx = html.range(of: "<li><a", range: bidx..<html.endIndex)?.lowerBound,
+                     let c2idx = html.range(of: "\">", range: cidx..<html.endIndex)?.lowerBound,
+                     let eidx = html.range(of: "</a>", range: html.index(c2idx, offsetBy: 2)..<html.endIndex)?.lowerBound
+                  {
+                    self.electionName = "Statewide Election"
+                    self.electionDate = html[html.index(c2idx, offsetBy: 2)..<eidx].trimmingCharacters(in: .whitespacesAndNewlines)
+                  }
+                }
+                self.status = .active
+              }
+            }
+                
           }
           print(electionDate,electionName)
           
-          self.status = .active
+          
         } else {
           self.status = .inactive
         }

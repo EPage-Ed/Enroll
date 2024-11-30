@@ -35,6 +35,7 @@ struct RegisterView: View {
   @ObservedObject var rVM : SwiftUIWebViewRegisterModel
   var license : License
   @State private var showRegister = false
+  @State private var showRegisterInfo = false
   @State private var showInfo = false
   
   private let counties = [
@@ -192,7 +193,18 @@ struct RegisterView: View {
       
       Spacer()
       Button("Register") {
-        print("Register")
+        showRegisterInfo.toggle()
+      }
+      .buttonStyle(.borderedProminent)
+      .disabled(!rVM.canRegister)
+      .foregroundStyle(.linearGradient(colors: [.red,.white,.blue], startPoint: .leading, endPoint: .trailing))
+      .tint(.black)
+      .font(.title)
+      .padding(.bottom)
+    }
+    .alert("You will be presented with the official California Voter Registration form. Review the pre-filled information and make any changes as desired.", isPresented: $showRegisterInfo) {
+      Button("Cancel", role: .cancel) { }
+      Button("Continue") {
         rVM.step = 0
         rVM.license = license
         rVM.loadUrl(license: license)
@@ -201,12 +213,6 @@ struct RegisterView: View {
           showInfo = true
         }
       }
-      .buttonStyle(.borderedProminent)
-      .disabled(!rVM.canRegister)
-      .foregroundStyle(.linearGradient(colors: [.red,.white,.blue], startPoint: .leading, endPoint: .trailing))
-      .tint(.black)
-      .font(.title)
-      .padding(.bottom)
     }
     .sheet(isPresented: $showRegister) {
       ZStack {

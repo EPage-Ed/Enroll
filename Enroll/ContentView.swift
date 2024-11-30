@@ -21,6 +21,8 @@ struct ContentView: View {
   @Environment(\.colorScheme) var colorScheme
   @Environment(\.openURL) var openURL
   
+  @State private var scanNum = 0
+  
   // function to post a form to a url
   func postForm(url: URL, form: [String: String]) async -> Data? {
     var request = URLRequest(url: url)
@@ -203,6 +205,7 @@ struct ContentView: View {
           .font(.title)
           .padding(.top, 40)
         case .inactive:
+          Spacer()
           VStack(spacing: 40) {
             Text("No Registration Found")
             Button("Register to Vote") {
@@ -223,6 +226,41 @@ struct ContentView: View {
             //              .strokeBorder(Color.white, lineWidth: 2)
             //              .background(.ultraThinMaterial)
           }
+          
+          VStack(spacing: 20) {
+            HStack {
+              Link("Why Register?", destination: URL(string:"https://www.thecivicscenter.org/why-register-and-vote")!)
+                .font(.title)
+                .foregroundStyle(.linearGradient(colors: [.red,.blue], startPoint: .leading, endPoint: .trailing))
+              Spacer()
+            }
+            .padding(4)
+            .padding(.horizontal, 20)
+            .background {
+              RoundedRectangle(cornerRadius: 25.0)
+                .fill(Color.clear)
+                .background(.thinMaterial)
+                .clipShape(RoundedRectangle(cornerRadius: 25.0))
+            }
+            HStack {
+              Link("Resons to Register", destination: URL(string:"https://www.mentoring.org/wp-content/uploads/2020/08/reasons-register-vote.pdf")!)
+                .font(.title)
+                .foregroundStyle(.linearGradient(colors: [.red,.blue], startPoint: .leading, endPoint: .trailing))
+              Spacer()
+            }
+            .padding(4)
+            .padding(.horizontal, 20)
+            .background {
+              RoundedRectangle(cornerRadius: 25.0)
+                .fill(Color.clear)
+                .background(.thinMaterial)
+                .clipShape(RoundedRectangle(cornerRadius: 25.0))
+            }
+
+          }
+          .padding()
+          .padding(.horizontal, 20)
+          
           Button("Start Over") {
             model.status = .none
           }
@@ -231,6 +269,8 @@ struct ContentView: View {
           .tint(.black)
           .font(.title)
           .padding(.top, 40)
+          
+          Spacer()
         }
         
       }
@@ -256,6 +296,18 @@ struct ContentView: View {
           license = License(code: result.string)
           scannedCode = result.string
           print(license.dict)
+          
+          switch scanNum {
+          case 0: model.status = .underage
+          case 1:
+            model.status = .scanned
+            model.loadUrl(license: license)
+          case 2: model.status = .inactive
+          default: break
+          }
+          scanNum = (scanNum + 1) % 3
+
+          /*
           if license.canVote {
             model.status = .inactive
 //            model.status = .scanned
@@ -263,6 +315,7 @@ struct ContentView: View {
           } else {
             model.status = .underage
           }
+           */
           //          model.status = .scanned
           //          model.loadUrl(license: license)
           isPresentingScanner = false

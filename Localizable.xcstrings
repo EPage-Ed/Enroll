@@ -34,6 +34,26 @@
         }
       }
     },
+    "Cancel" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        }
+      }
+    },
+    "Continue" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar"
+          }
+        }
+      }
+    },
     "Digits" : {
       "localizations" : {
         "es-US" : {
@@ -224,6 +244,16 @@
         }
       }
     },
+    "Resons to Register" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Razones para Registrarse"
+          }
+        }
+      }
+    },
     "Review the following forms. Most of the required information will be pre-filled.\n Make any changes as desired." : {
       "localizations" : {
         "es-US" : {
@@ -360,6 +390,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Información de registro de votantes"
+          }
+        }
+      }
+    },
+    "Why Register?" : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Por qué registrarse?"
+          }
+        }
+      }
+    },
+    "You will be presented with the official California Voter Registration form. Review the pre-filled information and make any changes as desired." : {
+      "localizations" : {
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se le presentará el formulario oficial de Registro de Votantes de California. Revise la información completada previamente y realice los cambios que desee."
           }
         }
       }
